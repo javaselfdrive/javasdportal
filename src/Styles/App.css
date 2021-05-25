@@ -1,0 +1,3281 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: ""Avenir LT Pro 55 Roman "";
+  font-style: normal;
+  font-weight: normal;
+  src: local(""Avenir LT Pro 55 Roman ""),
+    url("./fonts/AvenirLTProRoman.woff") format("woff");
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: "Avenir LT Pro 55 Roman" !important;
+}
+
+/* Landing Page */
+
+.landingPageButton {
+  position: relative;
+}
+
+.landingPageButton ::after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 0;
+  background: #002AD1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.landingPageButton :hover::after {
+  height: 3px;
+}
+
+.landingPageButton :focus::after {
+  height: 3px;
+}
+
+.BuySell {
+  height: 866px;
+  margin-top: 64px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.BuySellCar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-repeat: no-repeat !important;
+  background-position: right 20% center !important;
+}
+
+.BuySellDiv {
+  width: 462px;
+  margin-left: 106px;
+  margin-top: 15%;
+}
+
+.LandingPageHeader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 64px;
+  color: #000000;
+  display: block;
+}
+
+.LandingPageSubHeader {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  width: 365px;
+  color: #000000;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.LandingPageDescription {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  text-align: center;
+  color: #18191f;
+}
+
+.LandingPageWhiteText {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #d9dbe1;
+}
+
+.LandingPageBlackText {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18191f;
+}
+
+.LandingPagePadding {
+  padding: 64px 165px;
+}
+
+.HowItWorks {
+  height: auto;
+}
+
+.PopularModels {
+  background-color: #f4f5f7;
+}
+
+.ModelContainer {
+  width: 50%;
+  margin: 64px auto 64px;
+}
+
+.ModelContainerB {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 22px;
+  margin: 19.3px 0 0;
+  padding: 0;
+}
+
+.PopularModel {
+  height: 96px;
+  width: 170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 30px 40px 0 rgb(212 217 232 / 20%);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.OtherModels {
+  height: 28px;
+  grid-gap: 10px;
+  gap: 10px;
+  padding: 3px 26px;
+  border-radius: 5px;
+  background-color: #f1f1f2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Benefits {
+  min-height: 560px;
+}
+
+.BenefitsImg {
+  width: 72px;
+  height: 72px;
+  margin-right: 40px;
+  flex-grow: 0;
+  padding: 24px;
+  border-radius: 100px;
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Boss {
+  height: 675px;
+  width: 100%;
+  background: #002AD1;
+  padding: 64px 165px;
+  padding-bottom: 0px;
+  display: table
+}
+
+.BossHeader {
+  height: 113px;
+}
+
+.SampleDash {
+  height: calc(100% - 113px);
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: bottom !important;
+}
+
+.Stories {
+  background-repeat: no-repeat !important;
+  background-position: left 7% top 64px !important;
+  background-size: 100px !important;
+}
+
+.StoriesContainer {
+  background-color: rgba(245, 249, 254, 0.7);
+  height: 100%;
+  padding-top: 93px;
+}
+
+.StoryImage {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.StoryQuotes {
+  width: 15.9px;
+  height: 14px;
+  opacity: 0.3;
+  margin-right: 10px;
+}
+
+.StoryQuotes img {
+  height: 0.6em;
+}
+
+.StoryA {
+  width: 350px;
+  height: 390px;
+  margin: 24px 30px 0px 47px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 rgba(41, 41, 42, 0.07);
+  background-color: #ffffff;
+  float: right;
+}
+
+.StoryB {
+  width: 445px;
+  height: 262px;
+  margin: 24px 0 29px 0px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 rgba(41, 41, 42, 0.07);
+  background-color: #ffffff;
+}
+
+.StoryC {
+  width: 350px;
+  height: 326px;
+  gap: 32px;
+  margin: 29px 95px 0 0px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 rgba(41, 41, 42, 0.07);
+  background-color: #ffffff;
+}
+
+.footer {
+  gap: 0;
+  padding: 0;
+  background-color: #0b0d17;
+  color: #eeeff4;
+}
+
+.footerMenu {
+  padding: 0 180px;
+  padding-top: 64px;
+}
+
+.footerMenulist {
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.footerRights {
+  width: 100%;
+  height: 80px;
+  padding: 0 180px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerIcons {
+  display: flex;
+  float: right;
+}
+
+.BG {
+  width: 32px;
+  height: 32px;
+  margin: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.1;
+  background-color: #ffffff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Container {
+  height: 100%;
+  width: 100%;
+  background: #1b1e37e6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Avenir LT Pro 55 Roman " !important;
+}
+
+.ContainerSignUp {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f9fe;
+  background-image: url("../Styles/icon/background.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Avenir LT Pro 55 Roman" !important;
+}
+
+.ContainerFooter {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: rgba(37, 37, 37, 0.7);
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+
+.SignUpContainer {
+  margin: 0 auto;
+  display: flow-root;
+}
+
+.SignUpFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(37, 37, 37, 0.7);
+}
+
+.FooterButton {
+  height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(37, 37, 37, 0.7);
+}
+
+.FooterButtonBorder {
+  height: 12px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-right: 1px solid rgba(37, 37, 37, 0.7);
+  text-align: center;
+  letter-spacing: 0px;
+  background: none;
+  cursor: pointer;
+  outline: none !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(37, 37, 37, 0.7);
+}
+
+.NavBar {
+  width: 100%;
+  height: auto;
+  /* margin-top: 4px; */
+}
+
+/* Sign up pages */
+
+.CompanyLogo {
+  margin-left: 70px;
+  height: 5em;
+}
+
+.SignForm {
+  margin-top: 6em;
+  margin-bottom: 8%;
+}
+
+.SignUpSelect {
+  height: 77px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 30.1px 24px 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-shadow: 0 11px 35px 15px rgba(0, 0, 0, 0.02);
+  background-color: #ffffff;
+  cursor: pointer;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  color: #252b33;
+}
+
+.SignUpSelect img {
+  filter: invert(0%) sepia(96%) saturate(16%) hue-rotate(246deg) brightness(98%) contrast(105%);
+}
+
+.SignForm button:hover>img {
+  filter: invert(62%) sepia(74%) saturate(2008%) hue-rotate(340deg) brightness(101%) contrast(92%);
+}
+
+.SignForm button:hover {
+  border: 1px solid #f58730;
+}
+
+.SignForm button:hover>div {
+  filter: invert(11%) sepia(88%) saturate(5062%) hue-rotate(232deg) brightness(99%) contrast(114%);
+}
+
+.SignForm button:focus>img {
+  filter: invert(62%) sepia(74%) saturate(2008%) hue-rotate(340deg) brightness(101%) contrast(92%);
+}
+
+.SignForm button:focus {
+  border: 1px solid #f58730;
+}
+
+.SignForm button:focus>div {
+  filter: invert(11%) sepia(88%) saturate(5062%) hue-rotate(232deg) brightness(99%) contrast(114%);
+}
+
+.SignUpHeader .SignUpForm {
+  min-width: 200px;
+  max-width: 39em;
+  background: transparent 0% 0% no-repeat padding-box;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+
+.SignTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #252b33;
+}
+
+.SignSubtitle {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(37, 37, 37, 0.7);
+}
+
+.Stepper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  margin-right: 4px;
+  margin-left: 4px;
+  background: #e5e5e5;
+}
+
+.line {
+  width: 3em;
+  height: 0.1em;
+  background: #e5e5e5;
+}
+
+.Form {
+  min-width: 200px;
+  max-width: 410px;
+  margin: 29px auto;
+  display: grid;
+  font-size: 14px;
+  padding: 30px 28px 30px 28px;
+  border-radius: 5px;
+  box-shadow: 0 11px 35px 15px rgba(0, 0, 0, 0.02);
+  background-color: #ffffff;
+}
+
+.Animation {
+  position: relative;
+  -webkit-animation: slideIn 1s forwards;
+  -moz-animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.SignFormDetailsSelect {
+  background: #ffffff;
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  opacity: 1;
+  padding: 13px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.SignFormDetails {
+  padding-top: 20px;
+}
+
+.SignFormDetails label {
+  text-align: left !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.SignFormDetails input {
+  background: #ffffff;
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  color: #252525;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 14px !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  opacity: 1;
+  padding: 13px !important;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.SignFormDetails input:hover {
+  border: 1px solid #f58730;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 7px 9px -3px rgba(70, 70, 70, 0.06);
+}
+
+.SignFormDetails input:focus {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f58730;
+  border-radius: 5px;
+  opacity: 1;
+  outline: none;
+}
+
+.SignFormDetails ::placeholder {
+  text-align: left;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #bfcfff8f;
+  opacity: 1;
+}
+
+.SignUpFormsPassword {
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 13px;
+  border: 2px solid #878a9d;
+  background: #ffffff1a 0% 0% no-repeat padding-box;
+  display: block;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.SignUpFormsPassword:hover {
+  border: 2px solid #f58730;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 7px 9px -3px rgba(70, 70, 70, 0.06);
+}
+
+.SignUpFormsPassword:focus {
+  outline: none;
+  border: 2px solid #f58730;
+  border-radius: 5px;
+  box-shadow: 0 10px 14px -4px rgba(70, 70, 70, 0.06);
+}
+
+.SignUpFormsPasswordIcon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SignUpFormsPasswordIconCheck {
+  float: right;
+  height: 18px;
+  width: 18px;
+  padding-top: 1.4em;
+  margin-left: -2em;
+  margin-right: 1em;
+}
+
+.SignUpFormsPasswordValidation {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.SignUpFormsPasswordValidationPill {
+  height: 5px;
+  width: 4em;
+  background: #f4f7ff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  margin-right: 6px;
+}
+
+.PasswordConfirm {
+  color: rgb(240, 80, 80);
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.SignUpFormsTwoInOne {
+  display: flex;
+  background: #ffffff;
+  border: 2px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  color: #252525;
+  border-radius: 4px;
+  height: 45px;
+  text-align: left;
+  font-size: 14px !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  opacity: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.SignUpFormsTwoInOneSmall {
+  width: 140px;
+  position: relative;
+}
+
+.SignUpFormsTwoInOneSmall:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 25%;
+  height: 50%;
+  border-left: 1px solid rgba(37, 37, 37, 0.7);
+}
+
+.SignUpFormsTwoInOne input {
+  background: #ffffff;
+  border: none !important;
+  box-sizing: border-box;
+  color: #252525;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 14px !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  opacity: 1;
+  padding: 13px !important;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0px !important;
+}
+
+.SignUpFormsTwoInOne input:hover {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.SignUpFormsTwoInOne input:focus {
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.SignUpFormsTwoInOne:hover {
+  border: 2px solid #f58730;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 7px 9px -3px rgba(70, 70, 70, 0.06);
+}
+
+.SignUpFormsTwoInOne:focus {
+  outline: none;
+  border: 2px solid #f58730;
+  border-radius: 5px;
+  box-shadow: 0 10px 14px -4px rgba(70, 70, 70, 0.06);
+}
+
+.SignUpFormsTwoInOneSmall div {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.SignUpFormsTwoInOneSmall :hover>div {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.SignUpFormsTwoInOneSmall :focus>div {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.SignUpFormsClearButton {
+  background: #ffffff;
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  border-radius: 4px;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 48%;
+  display: block;
+  text-align: center;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  height: 45px;
+  color: #000000;
+}
+
+.SignUpFormsClearButtonSelected {
+  background: rgba(245, 135, 48, 0.1);
+  border: 1px solid #f58730;
+  box-sizing: border-box;
+  border-radius: 4px;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 48%;
+  display: block;
+  text-align: center;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  height: 45px;
+  color: #002ad1;
+}
+
+.SignUpFormsClearButton:hover {
+  background: rgba(245, 135, 48, 0.1);
+  border: 1px solid #f58730;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #002ad1;
+  transition: 0.2s ease-in-out;
+}
+
+.SignUpFormsClearButton:focus {
+  outline: none;
+  background: rgba(245, 135, 48, 0.1);
+  border: 1px solid #f58730;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #002ad1;
+}
+
+.Verification {
+  border: none !important;
+  box-sizing: border-box;
+  width: 20%;
+  height: 45px;
+  flex-grow: 0;
+  margin: 0 10px 20px 10px;
+  background-color: #ffffff;
+}
+
+.Verification input {
+  margin-top: 0px !important;
+  text-align: center;
+}
+
+.SignUpFormsSubmit {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 2px solid #002ad1;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 14px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  height: 40px;
+  color: #eef2f7;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.SignUpFormsSubmit:hover {
+  background-color: #f58730;
+  border: 2px solid #f58730;
+  transition: 0.2s ease-in-out;
+}
+
+.SignUpFormsSubmit:focus {
+  outline: none;
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 2px solid #002ad1;
+  border-radius: 3px;
+  box-shadow: 0 10px 14px -4px rgba(70, 70, 70, 0.06);
+}
+
+.SignUpFormsSubmitDisabled {
+  border-radius: 3px;
+  border: 2px solid #bfcfff !important;
+  background: #bfcfff;
+  opacity: 0.5;
+  cursor: unset;
+  margin-bottom: 14px;
+  width: 100%;
+  display: block;
+  height: 45px;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  color: #ffffff;
+}
+
+.RedirectButtonPlain {
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #252525;
+  opacity: 1;
+  background: none;
+  border: none !important;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.DisplayFlexSpace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.DisplayFlex {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.DisplayFlex1 {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.DisplayFlexB {
+  display: flex;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.RedirectButton {
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  text-decoration: underline;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #f58730;
+  opacity: 1;
+  background: none;
+  border: none !important;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.RedirectButtonTransparent {
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #bfcfff;
+  cursor: pointer;
+  background: #bfcfff1c 0% 0% no-repeat padding-box;
+  border: 1px solid #0060e01a;
+  opacity: 1;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 45px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.RedirectButtonTransparent span {
+  margin-left: 17%;
+}
+
+hr.signUpForm {
+  margin: auto;
+  border: 0.4000000059604645px solid #bababb99;
+  opacity: 1;
+  width: 50%;
+}
+
+@media only screen and (max-width: 720px) {
+  .SignUpContainer {
+    width: 90%;
+  }
+
+  .SignUpFooter {
+    justify-content: center;
+    bottom: 50px;
+  }
+
+  .ContainerFooter {
+    width: 100%;
+    bottom: 20px;
+    right: auto;
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .CompanyLogo {
+    margin-left: 10px;
+  }
+
+  .SignUpForm {
+    width: 80%;
+    margin-top: 0px;
+  }
+
+  .RedirectButtonTransparent span {
+    margin-left: 5px;
+  }
+
+  .DisplayFlex {
+    display: block;
+  }
+
+  .DisplayFlexB {
+    display: block;
+  }
+}
+
+/* Main App */
+.ContainerApp {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #f5f9fe;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.Loader {
+  text-align: center;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #252b33;
+  opacity: 1;
+}
+
+/* TopBar */
+.MainTopBar {
+  background-color: #ffffff;
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0px 7px 15px 2px rgba(0, 0, 0, 0.02);
+}
+
+.MainTopBarInfo {
+  margin-right: 10px;
+  height: 100%;
+  font-size: 14px;
+  float: right;
+  display: flex;
+  align-items: center;
+  font-family: "Avenir LT Pro 55 Roman";
+  color: #000000;
+}
+
+/* Menu */
+.Menu {
+  height: 100%;
+  width: 215px;
+  float: left;
+}
+
+.MenuDrawer {
+  overflow-y: hidden;
+}
+
+.MenuListLogo {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: 20px !important;
+  background: #ffffff;
+  height: 45px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.02);
+  width: 170px !important;
+}
+
+.MenuListLogoProfile {
+  opacity: 1;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+  background: rgb(244, 247, 255);
+  display: inline-block !important;
+  height: auto;
+}
+
+.MenuListLogo img {
+  margin-left: 3em;
+}
+
+.MenuList {
+  height: 45px;
+  background: #00b8de00 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+.MenuList img {
+  height: 1.5em;
+  filter: grayscale(100%);
+}
+
+.MenuListText {
+  margin-left: 10px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #1c1e26;
+  font-weight: bold;
+  opacity: 1;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.MenuRedirect {
+  margin-top: 6em;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: rgba(37, 43, 51, 0.5);
+}
+
+/*Profile*/
+.Profile {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.ProfileHeader {
+  text-align: center;
+}
+
+.ProfileSelect {
+  width: 100%;
+}
+
+.ButtonBackgroundPurple {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  background: #f4f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProfileSelectButton {
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30.1px 20px 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 11px 35px 15px rgba(0, 0, 0, 0.02);
+  background-color: #ffffff;
+  cursor: pointer;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  color: #000000;
+}
+
+.ProfileSelect button:hover>img {
+  filter: invert(62%) sepia(74%) saturate(2008%) hue-rotate(340deg) brightness(101%) contrast(92%);
+}
+
+.ProfileSelect button:hover {
+  border: 1px solid #f58730;
+  color: #002ad1;
+  transition: 0.2s ease-in-out;
+}
+
+.ProfileSelect button:focus {
+  border: 1px solid #f58730;
+  color: #002ad1;
+}
+
+.BackButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin-bottom: 25px;
+  text-align: right;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  background: none;
+  border: none !important;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.BackButton span {
+  margin-left: 10px;
+}
+
+.VerificationCallOut {
+  width: 350px;
+  margin: 0 0 0 88px;
+  padding: 20px 15.9px 12px 21px;
+  border-radius: 5px;
+  background-color: #f4f7ff;
+  font-size: 14px;
+  color: rgba(37, 37, 37, 0.7);
+}
+
+.VerificationCallOut span {
+  display: block;
+}
+
+.ProfileSpanText {
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: rgba(37, 37, 37, 0.7);
+  font-weight: bold;
+  opacity: 1;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.ProfilePercentage {
+  width: 64px;
+  height: 7px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: #d2dbff;
+}
+
+.ProfilePercentageBarBlue {
+  height: 7px;
+  border-radius: 5px;
+  background-color: #002ad1;
+}
+
+.ProfilePercentageSpanBlue {
+  color: rgb(0, 42, 209);
+  font-size: small;
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.ProfileForm {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.ProfileHelp {
+  position: absolute;
+  bottom: 30px;
+  width: 50%;
+}
+
+.PersonalInfo {
+  width: 50%;
+}
+
+.ProfileImage {
+  width: 125px;
+  height: 141px;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #f4f7ff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  background: #f4f7ff;
+}
+
+.ProfilePicture {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.DeleteImage {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  display: flex;
+  cursor: pointer;
+  flex-grow: 0;
+  padding: 5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.ProfileForm label {
+  text-align: left !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ProfileForm input {
+  background: #ffffff;
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  color: rgba(37, 37, 37, 0.7);
+  border-radius: 4px;
+  text-align: left;
+  font-size: 14px !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  opacity: 1;
+  padding: 13px !important;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.ProfileForm input[type="file"] {
+  background: red;
+  height: 100%;
+  margin: 0px;
+}
+
+.ProfileForm input[type="file"]:hover {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ProfileForm input[type="file"]:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ProfileForm input:hover {
+  border: 1px solid #f58730;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 7px 9px -3px rgba(70, 70, 70, 0.06);
+}
+
+.ProfileForm input:focus {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f58730;
+  border-radius: 5px;
+  opacity: 1;
+  outline: none;
+}
+
+.ProfileForm ::placeholder {
+  text-align: left;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #bfcfff8f;
+  opacity: 1;
+}
+
+.ProfileFormSelect {
+  width: 100%;
+  height: 45px;
+  padding: 13px !important;
+  color: rgba(37, 37, 37, 0.7);
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  background: #ffffff;
+  border-radius: 4px;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px !important;
+  margin: 10px 0 20px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.ProfileFormSelect:hover {
+  border: 1px solid #f58730;
+  box-shadow: 0 7px 9px -3px rgba(70, 70, 70, 0.06);
+  transition: 0.2s ease-in-out;
+}
+
+.ProfileFormSelect:focus {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f58730;
+  border-radius: 5px;
+  opacity: 1;
+  outline: none;
+}
+
+.PersonalInfoForm {
+  width: 70%;
+}
+
+.WarningBar {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  flex-grow: 0;
+  padding: 13px 16px 13px 16px;
+  border-radius: 3px;
+  background-color: rgba(239, 195, 37, 0.1);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #b55407;
+  display: flex;
+  align-items: flex-end;
+}
+
+.WarningBar span {
+  margin-left: 15px;
+  line-height: 1.5em;
+}
+
+.PersonalDocumentsTab {
+  width: 25%;
+  margin-right: 60px;
+}
+
+.PersonalDocumentsTab button {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #252b33;
+  width: 100%;
+  opacity: 1;
+  padding-bottom: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.RedirectButtonMain {
+  text-align: left;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #002ad1;
+  width: 100%;
+  opacity: 1;
+  background: none;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.DocumentUploadView {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.DocumentUploadForm {
+  background: #ffffff;
+  border: 1px solid #f4f7ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  width: 30%;
+}
+
+.DocumentUploadForm hr {
+  border: 0.5px solid #f5f9fe;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.DocumentUploadMiddle {
+  display: table-cell;
+  width: 5%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 19em;
+}
+
+.ProfileSaveButton {
+  width: 27em;
+}
+
+.DocumentUploadButton {
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #002ad1;
+  width: 100%;
+  opacity: 1;
+  margin-bottom: 10px;
+  cursor: pointer;
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background: #f4f7ff;
+  border: solid 1px rgba(0, 42, 209, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.DocumentUploadSubtitle {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 1.5em !important;
+  color: rgba(37, 37, 37, 0.7) !important;
+  display: block;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.DocumentUploadImage {
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #002ad1;
+  width: 100%;
+  opacity: 1;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  background: #f4f7ff;
+  border: solid 1px rgba(0, 42, 209, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.LoadedFile {
+  background: #2eb57e;
+  border-radius: 5px;
+  height: 0.5em;
+  width: 85%;
+}
+
+.WarningContainer {
+  height: 27em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.WarningContainer button {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.WarningContainerButton {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 2px solid #002ad1;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 14px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  height: 45px;
+  color: #eef2f7;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.WarningContainerButton:hover {
+  background-color: rgba(0, 42, 209, 0.1);
+  border: 2px solid #002ad1;
+  color: #002ad1;
+  transition: 0.2s ease-in-out;
+}
+
+.WarningContainerButton:focus {
+  outline: none;
+  background: rgba(0, 42, 209, 0.1);
+  border: 2px solid #002ad1;
+  color: #002ad1;
+}
+
+.ModalPaper {
+  width: 410px;
+  flex-grow: 0;
+  margin: 0 auto;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 11px 35px 15px rgb(0 0 0 / 2%);
+  background-color: #ffffff;
+}
+
+.ModalHeader {
+  padding: 20px;
+  text-align: center;
+}
+
+.ModalFooter {
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainBody {
+  width: 100%;
+}
+
+.Content {
+  width: calc(100% - 255px);
+  float: left;
+  margin-top: 4em;
+  margin-left: 20px;
+  min-height: 100vh;
+  padding: 35px 60px 75px 60px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  position: relative;
+}
+
+.ContentFull {
+  width: calc(100% - 255px);
+  float: left;
+  margin-top: 4em;
+  margin-left: 20px;
+  min-height: 100vh;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  /* background: #ffffff; */
+  position: relative;
+}
+
+.ContentHeader {
+  color: #000000;
+}
+
+.ContentHeaderBlue {
+  color: #ffffff;
+  background: linear-gradient(90deg, #002ad1 0%, #0b2bad 100%);
+  border-radius: 5px 5px 0px 0px;
+  padding: 30px;
+}
+
+.MainContentTitle {
+  font-size: 20px;
+  line-height: 2em;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.MainContentSubtitle {
+  color: #252b33;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.MainContentHeader {
+  color: #252b33;
+  font-size: 16px;
+  line-height: 2em;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.MainContentSubheader {
+  color: rgba(37, 37, 37, 0.7);
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+  line-height: 19.2px;
+}
+
+.ContentSpace {
+  min-height: 420px;
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  padding: 10px;
+}
+
+.ContentDetails {
+  padding: 20px;
+}
+
+.ContentSpacing {
+  margin: 15px 0 20px 0;
+}
+
+.ContentTitle {
+  text-align: left;
+  display: block;
+  font-size: 15px;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #1a1a1a;
+  opacity: 1;
+}
+
+.ContentSubtitle {
+  text-align: left;
+  font-size: 14px;
+  display: block;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #808080;
+  opacity: 1;
+}
+
+.RedirectButtonMainGrey {
+  text-align: left;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  color: #878a9d;
+  opacity: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.ContentBlueButton {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 1px solid #002ad1;
+  color: #f1f7ff;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  opacity: 1;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  margin-right: 15px;
+}
+
+.ContentBlueButton:hover {
+  background: #f1f7ff 0% 0% no-repeat padding-box;
+  border: 1px solid #f1f7ff;
+  color: #002ad1;
+  transition: 0.2s ease-in-out;
+}
+
+.ContentBlueButton:focus {
+  background: #f1f7ff 0% 0% no-repeat padding-box;
+  border: 1px solid #f1f7ff;
+  color: #002ad1;
+}
+
+.ContentBlueButtonInverted {
+  background: #f1f7ff 0% 0% no-repeat padding-box;
+  border: 1px solid #f1f7ff;
+  color: #002ad1;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  opacity: 1;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.ContentBlueButtonInverted:hover {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 1px solid #002ad1;
+  color: #f1f7ff;
+  transition: 0.2s ease-in-out;
+}
+
+.ContentBlueButtonInverted:focus {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 1px solid #002ad1;
+  color: #f1f7ff;
+}
+
+/*Dashboard*/
+.Font {
+  font-family: "Avenir LT Pro 55 Roman" !important;
+}
+
+.WhiteText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+  color: #ffffff;
+}
+
+.WhiteIshText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-family: "Avenir LT Pro 55 Roman";
+  color: #d2dbff;
+}
+
+.TrueBlack {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-family: "Avenir LT Pro 55 Roman";
+  color: #000000;
+}
+
+.BlackText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-family: "Avenir LT Pro 55 Roman";
+  color: #252b33;
+}
+
+.GreyText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.2px;
+  font-family: "Avenir LT Pro 55 Roman";
+  color: rgba(37, 37, 37, 0.7);
+}
+
+.Bold {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.CardTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.Cards {
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.MiddleCards {
+  margin-top: 20px !important;
+  margin-bottom: 25px !important;
+}
+
+.AccountBalances {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.AccountBalances img {
+  cursor: pointer;
+}
+
+.AccountBalancesMiddle {
+  height: 20%;
+  margin-top: 15px;
+}
+
+.AccountBalancesBottom {
+  height: 20%;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.ContentSpan {
+  display: block;
+}
+
+.ContentWhiteButton {
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  border-radius: 5px;
+  height: 45px;
+  width: 100%;
+  margin-top: 13.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(37, 37, 37, 0.7);
+  border-radius: 5px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.ContentWhiteButton img {
+  margin-right: 10px;
+}
+
+.ContentWhiteButton:hover {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 1px solid #002ad1;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.ContentWhiteButton:hover>img {
+  filter: brightness(0) invert(1);
+}
+
+.ContentWhiteButton:focus {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 1px solid #002ad1;
+  color: #ffffff;
+  outline: none;
+}
+
+.ContentWhiteButton:focus>img {
+  filter: brightness(0) invert(1);
+}
+
+.ContentWhiteButton span {
+  width: 105px;
+  text-align: left;
+}
+
+.BookingStatus {
+  /* height: 93px;
+  width: 93px; */
+  width: fit-content;
+  position: relative;
+}
+
+.BookingStatus span {
+  font-size: 16px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.BookingStatusText {
+  width: 7em;
+}
+
+.PeriodDropdown {
+  height: 35px !important;
+  width: 173px;
+  border-radius: 5px;
+  border: white;
+  background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.NoData {
+  margin: 0 auto;
+  margin-top: 2em;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+}
+
+.RecentBooking {
+  border-bottom: 1px solid #f1f1f1;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.TopCar {
+  height: 88px;
+  width: 165px;
+  margin-top: 1.7em;
+  border-radius: 5px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: rgba(0, 42, 209, 0.03) !important;
+}
+
+.TopCarB {
+  height: 100px;
+  width: 190px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: rgba(0, 42, 209, 0.03) !important;
+}
+
+.TopCarC {
+  height: 60px;
+  width: 107px;
+  border-radius: 5px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.TopCarD {
+  height: 228px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.TopCarCards {
+  /* height: 53px; */
+  flex-grow: 0;
+  margin-left: 15px;
+  padding: 15px 34px 14px 27px;
+  border-radius: 5px;
+  background-color: rgba(0, 42, 209, 0.03);
+  font-size: 14px;
+}
+
+.TopCarCardsB {
+  text-align: center;
+  flex-grow: 0;
+  margin-left: 15px;
+  padding: 15px 34px 14px 27px;
+  border-radius: 5px;
+  border: solid 1px #f5f9fe;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+.TopCarCardsC {
+  text-align: center;
+  flex-grow: 0;
+  margin-left: 15px;
+  padding: 15px 23px;
+  border-radius: 5px;
+  border: solid 1px #f5f9fe;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+.LearnMore {
+  text-align: center;
+  height: 259px;
+  width: 100%;
+  border-radius: 5px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.BottomButton {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-top: 3.5em;
+}
+
+.LearnMoreButton {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  opacity: 1;
+  width: 228px;
+  display: block;
+  text-align: center;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  height: 45px;
+  color: #002ad1;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.LearnMoreButton:hover {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 2px solid #002ad1;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.LearnMoreButton:focus {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 2px solid #002ad1;
+  color: #ffffff;
+  outline: none;
+}
+
+/* Tour */
+.Tour {
+  position: absolute;
+  z-index: 1000;
+  -webkit-animation: fadein 0.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.5s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.5s;
+  /* Opera < 12.1 */
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.TourCard {
+  padding: 17px;
+  background-color: #002ad1;
+  color: white;
+  border-radius: 3px;
+  width: 237px;
+  display: flow-root;
+}
+
+.TourCardPointer {
+  width: 0;
+  height: 0;
+  margin-left: 20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #002ad1;
+}
+
+.TourCardPointerB {
+  width: 0;
+  height: 0;
+  margin-top: 20px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #002ad1;
+}
+
+.TourCard img {
+  float: right;
+}
+
+.TourCardButtons {
+  display: flex;
+  float: right;
+  margin-top: 15px;
+}
+
+.TourCardNext {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 7px 25px;
+  opacity: 1;
+  display: block;
+  text-align: center;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 13px;
+  letter-spacing: 0px;
+  margin-left: 9px;
+  height: 35px;
+  color: #002ad1;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  opacity: 1;
+}
+
+.TourCardBack {
+  background: rgba(245, 249, 254, 0.63);
+  border-radius: 5px;
+  padding: 7px 25px;
+  opacity: 1;
+  display: block;
+  text-align: center;
+  text-align: center;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 13px;
+  letter-spacing: 0px;
+  height: 35px;
+  color: #002ad1;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  opacity: 1;
+}
+
+/* Fleet Management */
+.FleetManagementTableCard {
+  padding: 20px;
+  min-height: 646px;
+}
+
+.FleetTableRows {
+  padding: 18px;
+  background: rgba(0, 42, 209, 0.02);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  opacity: 1;
+  border: none;
+  text-align: left;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.FleetTableRowsSelected {
+  padding: 18px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  opacity: 1;
+  border: none;
+  text-align: left;
+  margin-right: 20px;
+  width: 100%;
+  background: rgba(0, 42, 209, 0.05);
+  box-shadow: 0px 4px 7px rgba(37, 43, 51, 0.02);
+}
+
+.FleetTableRows:hover {
+  box-sizing: border-box;
+  background: rgba(0, 42, 209, 0.05);
+  box-shadow: 0px 4px 7px rgba(37, 43, 51, 0.02);
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.FleetTableRows:focus {
+  box-sizing: border-box;
+  background: rgba(0, 42, 209, 0.05);
+  box-shadow: 0px 4px 7px rgba(37, 43, 51, 0.02);
+  border-radius: 5px;
+}
+
+.InProgress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 21px;
+  width: 130px;
+  /* height: 29px; */
+  background: #d2dbff;
+  border-radius: 15px;
+  color: #002ad1;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.Cancelled {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 21px;
+  width: 130px;
+  /* height: 29px; */
+  background: rgba(0, 42, 209, 0.02);
+  border-radius: 15px;
+  color: #252b33;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.Completed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 21px;
+  width: 130px;
+  /* height: 29px; */
+  background: rgba(46, 181, 126, 0.1);
+  border-radius: 15px;
+  color: #2eb57e;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.Failed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 21px;
+  width: 130px;
+  /* height: 29px; */
+  background: rgba(240, 80, 80, 0.1);
+  border-radius: 15px;
+  color: #d94242;
+  font-size: 14px;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+
+.FilterDiv {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.Search {
+  background: #ffffff;
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  color: #252525;
+  border-radius: 4px;
+  letter-spacing: 0px;
+  opacity: 1;
+  width: 355px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.Search ::placeholder {
+  color: rgba(37, 43, 51, 0.5);
+}
+
+.Search img {
+  padding: 10px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.Search input {
+  background: #ffffff;
+  height: 38px;
+  border: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  color: #252525;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 14px !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  opacity: 1;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.Search :hover {
+  border: 1px solid #f58730;
+  box-shadow: 0 7px 9px -3px rgba(70, 70, 70, 0.06);
+  transition: 0.2s ease-in-out;
+}
+
+.Search :focus {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f58730;
+  border-radius: 5px;
+  opacity: 1;
+  outline: none;
+}
+
+.FleetMoreDetails {
+  width: 333px;
+  min-height: 364px;
+  background: #ffffff;
+  box-shadow: 0px 4px 9px rgb(37 43 51 / 10%);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-animation: fadein 0.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.5s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.5s;
+  /* Opera < 12.1 */
+  animation: fadein 0.5s;
+}
+
+.FleetGauge {
+  height: 70px;
+  width: 150px;
+  margin: 20px auto 30px;
+}
+
+.FleetSpanDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.FleetSpanDivB {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sizing-box {
+  height: 40px;
+  width: 80px;
+}
+
+.signal-bars {
+  display: inline-block;
+}
+
+.signal-bars .bar {
+  width: 14%;
+  margin-left: 4%;
+  min-height: 20%;
+  display: inline-block;
+}
+
+.signal-bars .bar.first-bar {
+  height: 20%;
+}
+
+.signal-bars .bar.second-bar {
+  height: 40%;
+}
+
+.signal-bars .bar.third-bar {
+  height: 60%;
+}
+
+.signal-bars .bar.fourth-bar {
+  height: 80%;
+}
+
+.signal-bars .bar.fifth-bar {
+  height: 99%;
+}
+
+.good .bar {
+  background-color: #16a085;
+  border: thin solid darken(#2eb57e, 7%);
+}
+
+.bad .bar {
+  background-color: #e74c3c;
+  border: thin solid darken(#e74c3c, 20%);
+}
+
+.ok .bar {
+  background-color: #f1c40f;
+  border: thin solid darken(#f1c40f, 7%);
+}
+
+.four-bars .bar.fifth-bar,
+.three-bars .bar.fifth-bar,
+.three-bars .bar.fourth-bar,
+.one-bar .bar:not(.first-bar),
+.two-bars .bar:not(.first-bar):not(.second-bar) {
+  background-color: #e5e5e5;
+  border: thin solid #e5e5e5;
+}
+
+.Odometer {
+  width: 20px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #252b33;
+  border-radius: 4px;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.OdometerDecimal {
+  background: #f1f1f2;
+  color: #252b33;
+}
+
+.odometerNumber {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  line-height: 1em;
+  display: inline-block;
+  text-align: center;
+}
+
+.odometerNumber span {
+  position: relative;
+}
+
+.animateOdometer {
+  -webkit-animation: spinit 0.2s 5;
+  -moz-animation: spinit 0.2s 5;
+  animation: spinit 0.2s 5;
+}
+
+@-webkit-keyframes spinit {
+  0% {
+    top: 0em;
+  }
+
+  50% {
+    top: -5em;
+  }
+
+  100% {
+    top: -9em;
+  }
+}
+
+@-moz-keyframes spinit {
+  0% {
+    top: 0em;
+  }
+
+  50% {
+    top: -5em;
+  }
+
+  100% {
+    top: -9em;
+  }
+}
+
+@keyframes spinit {
+  0% {
+    top: 0em;
+  }
+
+  50% {
+    top: -5em;
+  }
+
+  100% {
+    top: -9em;
+  }
+}
+
+.MapMarker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #f05050;
+  box-sizing: border-box;
+  margin-right: 2px;
+}
+
+.MapMarkerText {
+  width: 100px;
+  height: 25px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Booking History*/
+.Filter {
+  background: linear-gradient(180deg, #fafafa 0%, #fbfdff 100%);
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 40px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  color: #252b33;
+  cursor: pointer;
+}
+
+.Filter:hover {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 1px solid #002ad1;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.Filter:hover>img {
+  filter: brightness(0) invert(1);
+}
+
+.Filter:focus {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 1px solid #002ad1;
+  color: #ffffff;
+  outline: none;
+}
+
+.Filter:focus>img {
+  filter: brightness(0) invert(1);
+}
+
+.FilterPopper {
+  padding: 6px 0px 20px;
+  width: 272px;
+  min-height: 400px;
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.FilterTop {
+  width: 272px;
+  height: 50px;
+  flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px;
+  padding: 11.4px 11.9px 9px 20px;
+  background-color: rgba(196, 196, 196, 0);
+  border-bottom: 1px solid #f1f1f1;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  color: #252b33;
+}
+
+.FilterBody {
+  flex-grow: 0;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+.FilterBody label {
+  text-align: left !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.FilterBody input {
+  background: #ffffff;
+  border: 1px solid rgba(37, 43, 51, 0.15);
+  box-sizing: border-box;
+  color: rgba(37, 37, 37, 0.7) !important;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 14px !important;
+  font-family: "Avenir LT Pro 55 Roman";
+  letter-spacing: 0px;
+  opacity: 1;
+  padding: 13px !important;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.FilterBody input:hover {
+  border: 1px solid #f58730;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 7px 9px -3px rgba(70, 70, 70, 0.06);
+}
+
+.FilterBody input:focus {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f58730;
+  border-radius: 5px;
+  opacity: 1;
+  outline: none;
+}
+
+.FilterSelect {
+  height: 40px !important;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 4px;
+  border: white;
+  background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.FilterFooter {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.PurpleButton {
+  background: rgba(0, 42, 209, 0.1);
+  border: none !important;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  color: #002ad1;
+  cursor: pointer;
+}
+
+.PurpleButton:hover {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.PurpleButton:hover>img {
+  filter: brightness(0) invert(1);
+}
+
+.PurpleButton:focus {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  outline: none;
+}
+
+.PurpleButton:focus>img {
+  filter: brightness(0) invert(1);
+}
+
+.Drawer {
+  width: 400px;
+  font-family: "Avenir LT Pro 55 Roman" !important;
+}
+
+/*Payments*/
+.Received {
+  height: 1.5em;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 2px solid #2eb57e;
+  color: #2eb57e;
+}
+
+.Sent {
+  height: 1.5em;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #f05050;
+  color: #f05050;
+}
+
+.PaymentsView {
+  margin: 0 auto;
+  width: 85%;
+  font-size: 14px;
+}
+
+.PaymentSelect {
+  height: 40px !important;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 4px;
+  border: white;
+  background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+  font-size: 14px;
+  padding-left: 5px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.PaymentsForm {
+  margin: 0 auto;
+  width: 355px;
+  font-size: 14px;
+}
+
+.PaymentMethod {
+  padding: 20px 68px 20px 68px;
+}
+
+.ButtonPadding {
+  margin: 0px;
+}
+
+.PaymentResponse {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Investment Account */
+.OrangeButton {
+  background: #F58730;
+  border: none !important;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 35px;
+  width: 196px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.OrangeButton:hover {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  transition: 0.2s ease-in-out;
+}
+
+.OrangeButton:focus {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  outline: none;
+}
+
+.StatusLegend {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #002AD1;
+  margin-right: 20px;
+}
+
+.InvestmentMessage {
+  width: 305px;
+  height: fit-content;
+  flex-grow: 0;
+  margin: 25px 0 0 6px;
+  padding: 14px 18px 14px 14px;
+  border-radius: 5px;
+  background-color: #f5f9fe;
+  display: flex;
+  align-items: flex-start;
+}
+
+.InvestmentMessage img {
+  margin-right: 14px;
+}
+
+.InvestmentMessageB {
+  height: fit-content;
+  width: 457px;
+  border-radius: 5px;
+  background: #F1F1F1;
+  border-radius: 5px;
+  padding: 14px 18px 14px 14px;
+}
+
+.InvestmentMessageB img {
+  margin-right: 14px;
+}
+
+.ActionForm {
+  width: 400px;
+}
+
+.RedButton {
+  border-radius: 3px;
+  background: #f05050 0% 0% no-repeat padding-box;
+  border: 2px solid #f05050;
+  cursor: pointer;
+  margin-bottom: 14px;
+  width: 100%;
+  display: block;
+  height: 45px;
+  font: normal normal normal 14px "Avenir LT Pro 55 Roman";
+  color: #eef2f7;
+}
+
+.RedButton:hover {
+  background: #002ad1 0% 0% no-repeat padding-box;
+  border: 2px solid #002ad1;
+  transition: 0.2s ease-in-out;
+}
+
+.RedButton:focus {
+  outline: none;
+  background: #f05050 0% 0% no-repeat padding-box;
+  border: 2px solid #f05050;
+  border-radius: 3px;
+  box-shadow: 0 10px 14px -4px rgba(70, 70, 70, 0.06);
+}
+
+@media print {
+  #bookingInformation {
+    width: 400px;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Menu {
+    width: 0%;
+  }
+
+  .Profile {
+    width: 85%;
+    margin-bottom: 9em;
+  }
+
+  .ProfileHeader {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .ProfileHelp {
+    width: 85%;
+    margin-left: 30px;
+  }
+
+  .PersonalInfo {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .VerificationCallOut {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .ProfilePercentage {
+    width: 58%;
+  }
+
+  .PersonalInfoForm {
+    width: 100%;
+  }
+
+  .WarningBar {
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 80%;
+  }
+
+  .ProfileSaveButton {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .DocumentUploadView {
+    display: grid;
+    width: 85%;
+  }
+
+  .DocumentUploadForm {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .DocumentUploadMiddle {
+    height: 4em;
+    width: 100%;
+  }
+
+  .ModalPaper {
+    width: 70%;
+  }
+
+  .Content {
+    width: 85%;
+    padding: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    min-height: auto;
+    font-family: "Avenir LT Pro 55 Roman" !important;
+  }
+
+  .ContentFull {
+    width: 85%;
+    padding: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    min-height: auto;
+    font-family: "Avenir LT Pro 55 Roman" !important;
+  }
+
+  .ContentHeader {
+    padding: 20px;
+  }
+
+  .ContentSpace {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 30px;
+  }
+
+  .AccountBalancesLeft {
+    width: 100%;
+  }
+
+  .AccountBalancesRight {
+    width: 100%;
+    text-align: left;
+  }
+
+  .TopCarCards {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .FleetMoreDetails {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .Search {
+    width: 100%;
+  }
+
+  .Drawer {
+    width: 80%;
+  }
+
+  .PaymentsView {
+    width: 100%;
+  }
+
+  .PaymentMethod {
+    padding: 20px 8px 20px 8px;
+  }
+
+  .PaymentsForm {
+    width: 100%;
+  }
+
+  .ButtonPadding {
+    margin: 30px;
+    margin-bottom: 0px;
+  }
+
+  .InvestmentMessageB {
+    width: 100%;
+  }
+
+  .ActionForm {
+    width: 100%;
+  }
+
+  .TopCarCardsC {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .TopCarCardsB {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+
+  .InvestmentMessage {
+    width: 100%;
+  }
+
+  .footerMenu {
+    margin: 0 auto;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .footerRights {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footerIcons {
+    justify-content: center;
+    float: none;
+  }
+
+  .BuySellDiv {
+    margin-left: 0px;
+    padding: 40px;
+    width: auto;
+  }
+
+  .LandingPagePadding {
+    padding: 64px 40px;
+  }
+
+  .LandingPageSubHeader {
+    width: auto;
+  }
+
+  .Boss {
+    padding: 64px 40px;
+    height: 400px;
+    padding-bottom: 0px;
+  }
+
+  .ModelContainer {
+    width: 100%;
+  }
+
+  .PopularModel {
+    width: auto;
+  }
+
+  .StoryA {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    float: none;
+  }
+
+  .StoryB {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .StoryC {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+:focus {
+  outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f9fe;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5f9fe;
+}
